@@ -1,0 +1,98 @@
+:root{
+    --todo-BackgroundColor:#2717816d;
+    --todo-height: 25em;
+    --todo-width:30%;
+    --todo-margin:3%;
+    --todo-buttonColor:#624cdf;
+    --cardSection-Width: 85%;
+    --searchBarDiv-Height:7em;
+    --container-backgroundColor-one:#9796f0;
+     --container-backgroundColor-two:#fbc7d4
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, var(--container-backgroundColor-one),var(--container-backgroundColor-two))
+  
+}
+.Container h1{
+    font-family: 'Manrope', sans-serif;
+}
+.todoInput{
+    background-color:var(--todo-BackgroundColor);
+    margin-top: var(--todo-margin);
+    height: var(--todo-height);
+    width: var(--todo-width);
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(12px);
+    align-items: center;
+    border-radius: 15px;
+}
+.todoInput button{
+    margin: 2% 0;
+    width: 55px;
+    height: 55px;
+    border-radius:50% ;
+    border: none;
+    background-color: var(--todo-buttonColor);
+    color: white;
+    cursor: pointer;
+
+}
+.caution{
+    font-size: 11px;
+}
+.CardsSection{
+    margin-top: 3%;
+    width: var(--cardSection-Width);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbarDiv{
+    margin-top: 5%;
+    height: var(--searchBarDiv-Height);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2em;
+    text-align: center;
+
+}
+
+
+
+
+@media screen and (max-width:600px) {
+    .todoInput{
+  
+    width: 90%;
+    
+}  
+.navbarDiv{
+   
+    width: 95%;
+    
+}
+.CardsSection{
+   
+    margin: 5% 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+}

@@ -1,0 +1,21 @@
+:root{
+    --navbar-backgroundColor: gray;
+    --navabar-Height: 4em;
+}
+
+.navbar{
+    height: 40%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar input{
+    height: 100%;
+    width: 80%;
+    padding: 0 2em;
+    border: none;
+    border-bottom: 1px solid black;
+}
