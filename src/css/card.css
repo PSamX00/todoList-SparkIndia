@@ -34,7 +34,7 @@
 .tags{
     font-size: 12px;
     margin: 1.2em 0;
-     padding: 0 0.8em ;
+    padding: 0 0.8em ;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
@@ -47,7 +47,7 @@
     padding: 0 0.5em ;
     margin: 0.5px 1px;
     text-align: center;
-    width: 50px;
+    min-width: 50px;
 }
 .deleteButton{
     position: relative;
